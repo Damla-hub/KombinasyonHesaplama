@@ -10,8 +10,7 @@ public class KombinasyonHesaplama {
         int n=numberOfElements-subset;
         for(int i=1;i<=numberOfElements;i++){
             factorialOne=factorialOne*i;
-
-        }System.out.println(factorialOne);
+        }
         for(int i =1;i<=subset;i++){
             factorialTwo*=i;
         }
@@ -20,6 +19,5 @@ public class KombinasyonHesaplama {
         }
         double combination = factorialOne/(factorialTwo*factorialThree);
         System.out.print("C("+numberOfElements+","+subset+")="+combination);
-
     }
 }
